@@ -125,15 +125,15 @@ class PureChat extends PluginBase
 
             if($this->clansPro->isLeader($player->getName()))
             {
-                $chatFormat = str_replace("{clan}", "*Leader*" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
+                $chatFormat = str_replace("{clan}", "§8»§6Leader§8«§b" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
             }
             elseif($this->clansPro->isCoLeader($player->getName()))
             {
-                $chatFormat = str_replace("{clan}", "*CoLeader*" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
+                $chatFormat = str_replace("{clan}", "§8»§6CoLeader§8«§b" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
             }
             elseif($this->clansPro->isMember($player->getName()))
             {
-                $chatFormat = str_replace("{clan}", "*Member*" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
+                $chatFormat = str_replace("{clan}", "§8»§6Member§8«§b" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
             }
         }
 
@@ -197,15 +197,15 @@ class PureChat extends PluginBase
 
             if($this->clansPro->isLeader($player->getName()))
             {
-                $nameTag = str_replace("{clan}", "*Leader*" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
+                $nameTag = str_replace("{clan}", "§8»§6Leader§8«§b" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
             }
             elseif($this->clansPro->isCoLeader($player->getName()))
             {
-                $nameTag = str_replace("{clan}", "*CoLeader*" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
+                $nameTag = str_replace("{clan}", "§8»§6CoLeader§8«§b" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
             }
             elseif($this->clansPro->isMember($player->getName()))
             {
-                $nameTag = str_replace("{clan}", "*Member*" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
+                $nameTag = str_replace("{clan}", "§8»§6Member§8«§b" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
             }
         }
 
