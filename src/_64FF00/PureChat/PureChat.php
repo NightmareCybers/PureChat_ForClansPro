@@ -120,7 +120,7 @@ class PureChat extends PluginBase
 
             if(!$this->clansPro->isInClan($player->getName()))
             {
-                $chatFormat = str_replace("{clan}", "*Member*" . $this->getConfig()->getNested("custom-no-clan-message"), $chatFormat);
+                $chatFormat = str_replace("{clan}", "Clan" . $this->getConfig()->getNested("custom-no-clan-message"), $chatFormat);
             }
 
             if($this->clansPro->isLeader($player->getName()))
@@ -133,7 +133,7 @@ class PureChat extends PluginBase
             }
             else
             {
-                $chatFormat = str_replace("{clan}", "Clan" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
+                $chatFormat = str_replace("{clan}", "*Member*" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
             }
         }
 
@@ -192,7 +192,7 @@ class PureChat extends PluginBase
 
             if(!$this->clansPro->isInClan($player->getName()))
             {
-                $nameTag = str_replace("{clan}", "*Member*" . $this->getConfig()->getNested("custom-no-clan-message"), $nameTag);
+                $nameTag = str_replace("{clan}", "Clan" . $this->getConfig()->getNested("custom-no-clan-message"), $nameTag);
             }
 
             if($this->clansPro->isLeader($player->getName()))
@@ -205,7 +205,7 @@ class PureChat extends PluginBase
             }
             else
             {
-                $nameTag = str_replace("{clan}", "Clan" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
+                $nameTag = str_replace("{clan}", "*Member*" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
             }
         }
 
