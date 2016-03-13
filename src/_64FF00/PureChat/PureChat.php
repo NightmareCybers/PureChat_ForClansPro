@@ -131,7 +131,7 @@ class PureChat extends PluginBase
             {
                 $chatFormat = str_replace("{clan}", "*CoLeader*" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
             }
-            else
+            elseif($this->clansPro->isMember($player->getName()))
             {
                 $chatFormat = str_replace("{clan}", "*Member*" . $this->clansPro->getPlayerClan($player->getName()), $chatFormat);
             }
@@ -203,7 +203,7 @@ class PureChat extends PluginBase
             {
                 $nameTag = str_replace("{clan}", "*CoLeader*" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
             }
-            else
+            elseif($this->clansPro->isMember($player->getName()))
             {
                 $nameTag = str_replace("{clan}", "*Member*" . $this->clansPro->getPlayerClan($player->getName()), $nameTag);
             }
