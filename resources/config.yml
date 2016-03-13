@@ -8,7 +8,7 @@ enable-multiworld-support: false
 
 # This message will be shown replacing th {clan} tag when a player is not in any clan
 # - STRING
-custom-no-fac-message: "..."
+custom-no-clan-message: "..."
 
 # A list of all PurePerms groups
 groups:
